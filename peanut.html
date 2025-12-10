@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peanuts & Companies</title>
+
+    <link rel="stylesheet" href="peanut.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {
+            'packages': ['map'],
+            'mapsApiKey': 'AIzaSyDhv-B5OKiU7Q1BDMpA9ahqe14tqsxDuU8'
+
+        });
+        google.charts.setOnLoadCallback(drawMap);
+
+        function drawMap() {
+            var data = google.visualization.arrayToDataTable([
+                ['Latitude', 'Longitude', 'Location Name'],
+                [40.0269, -75.2160, 'Jif Ohio'],
+                [43.2320, -93.2080, 'Hormel Minnesota'],
+                [42.5525, -70.8820, 'Teddie Massachusetts'],
+                [41.8781, -93.0977, 'ADM Illinois'],
+                [1.3521, 103.8198, 'Olam Singapore'],
+                [-33.8688, 151.2093, 'PCA Australia']
+            ]);
+
+            var options = {
+                showTooltip: true,
+                showInfoWindow: true
+            };
+
+            var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+            map.draw(data, options);
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <h2>PEANUTS</h2>
+        <img class="nav-dropdown"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABM0lEQVR4nO2UsUoDQRCGVwuxEGwC2tulsbjMXKVpfAVLWwuLOHOZ4Ui1re9gaS9YWKpNhFj4DDY2CpYiiETZiBjvstySbCPsB9PN//97e7NjTCKRSMQASK6B5T4T2YpiaIxxXs4TWK+8Tcj66QpIXzoke4uGwnF/F1mef3wbgyfhrB/AWs4bmpMeIuv7tKfxnpB1NN34XXLatnYlNND1Ok3VB1hHXlH3yK4h6XktnOQWRDabQrOiaAHrTS2U5DIry/Um/ZK7YmQd/xXrY6fXB58IudwGlodK6BhJToy1y02hv0aF7iPLa+Xkb0h6sEhvEAFfMdftBJH3BhvIOpzx3y5c1YdRh05jYtD2TGp9CPWsa+2qiU0+423GePNBIOkOkD7F3nLB+xdJ7lzF3OuJROJ/8QUxfwiHuNl8wgAAAABJRU5ErkJggg=="
+            alt="chevron-down">
+        <nav class="nav3d">
+            <ul class="content">
+                <li class="content-item"><a href="#" class="link link--helike"><span>Learn More</span></a></li>
+                <li class="content-item"><a href="#" class="link link--mneme"><span>Terms of Use</span></a></li>
+                <li class="content-item"><a href="#" class="link link--leda" data-text="Privacy Policy"><span>Privacy
+                            Policy</span></a></li>
+                <li class="content-item"><a href="#" class="link link--thebe"><span>Privacy Settings</span></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== CARVER SECTION ===== -->
+        <section>
+            <img src="https://media.gettyimages.com/id/3247894/photo/g-w-carver.jpg?s=2048x2048&w=gi&k=20&c=dqYnplKkIO06I9nf9OYvr6WO2jXo3oDABaGmisWJ2jw="
+                width="80px" />
+            <h2>George Washington Carver (AKA the plant doctor) 1864–1943</h2>
+            <p>Carver's scientific knowledge of plants enabled him to invent new products.</p>
+            <p>He was an American agricultural scientist and inventor who promoted alternative crops to cotton and
+                methods to prevent soil depletion.</p>
+
+            <ul>
+                <li><a href="#george-carver">More about George</a></li>
+                <li><a href="https://www.purdue.edu/science/K12/sos.html" target="_blank">Superheroes of Science</a>
+                </li>
+                <li><a href="https://peanut-institute.com/about-peanuts/peanut-products/" target="_blank">Peanut
+                        Products</a></li>
+                <li><a href="https://www.scienceatwork-online.com/" target="_blank">Science at Work</a></li>
+            </ul>
+        </section>
+
+        <!-- ===== TYPES OF PEANUTS ===== -->
+        <section>
+            <h2>Types of Peanuts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://www.thepeanutshop.com/images/uploads/category_27_5271.jpg">
+                    <strong>Virginia Peanuts</strong>
+                    <ul>
+                        <li>Largest peanut variety.</li>
+                        <li>Ballpark and gourmet peanuts.</li>
+                        <li>Grown in Virginia & Carolinas.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img src="https://kalamazookettlecorn.com/cdn/shop/files/spanishpeanuts-2_470x.jpg?v=1690300916">
+                    <strong>Spanish Peanuts</strong>
+                    <ul>
+                        <li>Higher oil content.</li>
+                        <li>Smaller with red skins.</li>
+                        <li>Used in candy & oil.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.potagerornemental.com/wp-content/uploads/2021/12/IMG_7822-001.jpg">
+                    <strong>Valencia Peanuts</strong>
+                    <ul>
+                        <li>3–5 peanuts per shell.</li>
+                        <li>Sweet and great boiled.</li>
+                        <li>Mainly grown in New Mexico.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PEANUT COMPANIES ===== -->
+        <section>
+            <h2>Peanut Companies</h2>
+            <div class="card-container">
+                <div class="card"><img src="./images/smucker.png"><strong>J.M. Smucker Company</strong>
+                    <p>Owner of Jif.</p>
+                </div>
+                <div class="card"><img src="./images/hormel-foods.png"><strong>Hormel Foods</strong>
+                    <p>Owns Skippy & Planters.</p>
+                </div>
+                <div class="card"><img src="./images/leavitt-group.png"><strong>Leavitt Corporation</strong>
+                    <p>Maker of Teddie.</p>
+                </div>
+                <div class="card"><img src="./images/archer-daniels-midland.png"><strong>ADM</strong>
+                    <p>Global supplier.</p>
+                </div>
+                <div class="card"><img src="./images/olam.png"><strong>Olam International</strong>
+                    <p>Operates in 60 countries.</p>
+                </div>
+                <div class="card"><img src="./images/pca.png"><strong>PCA – Australia</strong>
+                    <p>Largest in Australia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MAP WITH ANIMATIONS ===== -->
+        <section>
+            <div id="chart_div" style="width: 100%; height: 500px; border-radius: 10px;">
+                <h2>Peanut Companies Worldwide</h2>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT FORM ===== -->
+        <section>
+            <h2>Contact Us About Peanut Companies</h2>
+            <form>
+                <label>First Name:</label>
+                <input type="text" required>
+
+                <label>Last Name:</label>
+                <input type="text" required>
+
+                <label>Email:</label>
+                <input type="email" required>
+
+                <label>Message:</label>
+                <textarea rows="5" required></textarea>
+                <button class="button--atlas" value="Send Message">
+                    <span>Submit</span>
+                    <div class="marquee" aria-hidden="true">
+                        <div class="marquee__inner">
+                            <span>Submit</span>
+                            <span>Submit</span>
+                            <span>Submit</span>
+                            <span>Submit</span>
+                        </div>
+                    </div>
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <footer>
+            <h1>
+                <p class="copyright-text">
+                &copy; 2025 Garrick. All rights reserved.
+            </p>
+            <p class="email-contact">
+                garrickkogola@gmail.com
+            </p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                |
+                <a href="#">Twitter</a>
+                |
+                <a href="#">Instagram</a>
+            </h1>
+            
+            </div>
+        </footer>
+    </footer>
+    <script src="peanut.js"></script>
+</body>
+
+</html>
